@@ -50,27 +50,27 @@ describe('game reducer', () => {
            let badNewGameAction = {...newGameAction};
 
            badNewGameAction.width = MIN_TABLE_DIMENSION_SIZE - 1;
-           expect(reducer.bind(undefined, [undefined, badNewGameAction])).to.throw(Error);
+           expect(reducer.bind(undefined, undefined, badNewGameAction)).to.throw(Error);
            badNewGameAction.width = MAX_TABLE_DIMENSION_SIZE + 1;
-           expect(reducer.bind(undefined, [undefined, badNewGameAction])).to.throw(Error);
+           expect(reducer.bind(undefined, undefined, badNewGameAction)).to.throw(Error);
        });
 
         it('should throw error on bad height input', () => {
             let badNewGameAction = {...newGameAction};
 
             badNewGameAction.height = MIN_TABLE_DIMENSION_SIZE - 1;
-            expect(reducer.bind(undefined, [undefined, badNewGameAction])).to.throw(Error);
+            expect(reducer.bind(undefined, undefined, badNewGameAction)).to.throw(Error);
             badNewGameAction.height = MAX_TABLE_DIMENSION_SIZE + 1;
-            expect(reducer.bind(undefined, [undefined, badNewGameAction])).to.throw(Error);
+            expect(reducer.bind(undefined, undefined, badNewGameAction)).to.throw(Error);
         });
 
         it('should throw error on bad mines input', () => {
             let badNewGameAction = {...newGameAction};
 
             badNewGameAction.mines = MIN_MINES_NUMBER - 1;
-            expect(reducer.bind(undefined, [undefined, badNewGameAction])).to.throw(Error);
+            expect(reducer.bind(undefined, undefined, badNewGameAction)).to.throw(Error);
             badNewGameAction.mines = newGameAction.width * newGameAction.height;
-            expect(reducer.bind(undefined, [undefined, badNewGameAction])).to.throw(Error);
+            expect(reducer.bind(undefined, undefined, badNewGameAction)).to.throw(Error);
         });
     });
 

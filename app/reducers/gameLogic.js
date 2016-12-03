@@ -168,7 +168,7 @@ const validateNewGameParams = (width, height, mines) => validateTableDimension(w
 
 const validateTableDimension = dimension => dimension >= MIN_TABLE_DIMENSION_SIZE && dimension <= MAX_TABLE_DIMENSION_SIZE;
 
-const validateMinesNumber = (width, height, mines) => mines <= MIN_MINES_NUMBER || mines <= width * height - 1;
+const validateMinesNumber = (width, height, mines) => mines >= MIN_MINES_NUMBER && mines <= width * height - 1;
 
 const initialCell = {
     isMine: false,
