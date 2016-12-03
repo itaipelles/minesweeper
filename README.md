@@ -1,0 +1,1 @@
+A web implementation of the classic minesweeper game

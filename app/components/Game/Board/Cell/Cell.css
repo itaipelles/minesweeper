@@ -1,0 +1,29 @@
+:local(.root) {
+    text-align: center;
+    vertical-align: middle;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    background-color: lightgray;
+    border: 2px solid gray;
+}
+
+:local(.revealed) {
+    background-color: white;
+}
+
+:local(.mine) {
+    background: #FF0033 url(mine.png) center no-repeat;
+    background-size: 35px 35px;
+}
+
+:local(.flag) {
+    background-image: url(flag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+}
+
+:local(.xRay) {
+    background-color: #e4e3e3;
+}

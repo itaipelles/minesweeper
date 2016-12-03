@@ -1,0 +1,21 @@
+:local(#form) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+:local(.inputRow) {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+}
+
+:local(.input) {
+    width: 50px;
+}
+
+:local(#button) {
+    width: 200px;
+}

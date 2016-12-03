@@ -1,0 +1,12 @@
+:local(.container) {
+    display: flex;
+    flex-direction: column;
+}
+
+:local(.marginBottom) {
+    margin-bottom: 5px;
+}
+
+:local(.centerSelf) {
+    align-self: center;
+}
